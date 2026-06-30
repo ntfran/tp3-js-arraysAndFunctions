@@ -22,15 +22,15 @@ do {
   }
 } while (inputCiudad !== null);
 console.log("Array inicial", ciudades);
-console.log("Longitud del array", ciudades.length);
+console.log("El arreglo de la ciudad tiene ", ciudades.length, 'elementos.');
 
-pantalla.innerHTML += `<p>Primera ciudad: ${ciudades[0]}</p>`;
-pantalla.innerHTML += `<p>Tercera ciudad: ${ciudades[2]}</p>`;
-pantalla.innerHTML += `<p>Ultima ciudad: ${ciudades[ciudades.length - 1]}</p>`;
+pantalla.innerHTML += `<p>Elemento 1er posicion : ${ciudades[0]}</p>`;
+pantalla.innerHTML += `<p>Elemento 3er posicion: ${ciudades[2]}</p>`;
+pantalla.innerHTML += `<p>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</p>`;
 ciudades.push("Paris");
-pantalla.innerHTML += `<p>Ultima ciudad: ${ciudades[ciudades.length - 1]}</p>`;
+pantalla.innerHTML += `<p>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</p>`;
 ciudades[1] = "Barcelona";
-pantalla.innerHTML += `<p>Segunda ciudad: ${ciudades[1]}</p>`;
+pantalla.innerHTML += `<p>Elemento 2da posicion: ${ciudades[1]}</p>`;
 
 console.log(ciudades);
 mostrarCiudades();
