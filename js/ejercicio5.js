@@ -7,11 +7,11 @@ const analizarTexto = (texto) => {
     return `El texto "${texto}" está formado por mayúsculas y minúsculas.`;
   }
 };
-
+const pantalla = document.getElementById("pantalla");
 const inputTexto = prompt("Ingrese una frase para analizar:");
 if (inputTexto !== null && inputTexto !== "") {
   const resultado = analizarTexto(inputTexto);
-  pantalla.innerHTML += `<p>${resultado}</p>`;
+  pantalla.innerHTML += `<h1>${resultado}</h1>`;
 } else {
   alert("No ingresaste ningún texto válido.");
 }
