@@ -6,7 +6,7 @@ const mostrarResultados = () => {
       <th scope="col">Apariciones</th>
           </tr>
   </thead>`;
-  tabla += `  <tbody> <tr>`;
+  tabla += `  <tbody>`;
   for (let i = 0; i < 11; i++) {
     tabla += `<tr>`;
     tabla += `<td>${sumasPosibles[i]}</td>`;
